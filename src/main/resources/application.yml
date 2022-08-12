@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+myCustomProper:
+  welcomeMsg: Hello from Prod
+server:
+  port: 5000
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+myCustomProper:
+  welcomeMsg: Hello from Test
+server:
+  port: 4000
